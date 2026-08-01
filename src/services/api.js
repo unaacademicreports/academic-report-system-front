@@ -1,7 +1,6 @@
 import { useAuthStore } from '../stores/auth';
 
-// const API_URL = "http://127.0.0.1:5000";
-const API_URL = "https://newsletter-generator-una.onrender.com";
+const API_URL = import.meta.env.VITE_API_URL;
 
 const struct_api = "/api/v1";
 
