@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    /* Colors */
+    --color-primary: #2158A9;
+    --color-secondary: #102C54;
+    --color-tertiary: #F8FAFC;
+    --color-neutral: #475569;
+
+    --background-general: #F8FAFC;
+    --color-border: #C3C6D3;
+
+    /* Button color */
+    --button-blue: #0056b3;
+    --button-blue-hover: #013a78;
+
+    --button-white: #FFF;
+    --button-white-hover: #1f1f1f;
+
+    --button-red: #c22323;
+    --button-red-hover: #971a1a;
+
+    /* Alerts */
+    --bg-color-error: #FECACA;
+    --color-error: #DC2626;
+
+    --bg-color-success: #DCFCE7;
+    --color-success: #166534;
+
+    --bg-color-alert: #FFD580;
+    --color-alert: #92400E;
+
+    /* Fonts */
+    --font-headline: 'Work Sans', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-headline);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--background-general);
+    color: var(--color-neutral);
+}
+
+#app {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-columns: auto;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* FORM */
+
+.wrap-input {
+    display: grid;
+    grid-gap: 10px;
+    position: relative;
+}
+
+.wrap-input svg {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+}
+
+.wrap-input svg path {
+    fill: #737783;
+}
+
+.wrap-input label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0D1C2E;
+}
+
+.wrap-input input,
+.wrap-input select {
+    border: 1px solid #737783;
+    border-radius: 4px;
+    padding: 12px 12px 12px 42px;
+}
+
+/* form button, */
+button {
+    color: #fff;
+    background-color: var(--button-blue);
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    outline-style: none;
+    border: 1px solid var(--button-blue);
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+/* form button:hover, */
+button:hover {
+    background-color: var(--button-blue-hover);
+}
+
+button.white {
+    background-color: var(--button-white);
+    color: var(--button-black);
+    border: 1px solid var(--color-border);
+}
+
+button.white:hover {
+    background-color: var(--button-white-hover);
+    color: var(--button-white);
+}
+
+button.red {
+    background-color: var(--button-red);
+    border: 1px solid var(--button-red);
+}
+
+button.red:hover {
+    background-color: var(--button-red-hover);
+    border: 1px solid var(--button-red-hover);
+
+}
+
+/* TABLE */
+
+.wrap-table {
+    overflow: hidden;
+    overflow-x: scroll;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+}
+
+.wrap-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.wrap-table table thead {
+    background-color: #f1f5f9;
+}
+
+.wrap-table table thead th {
+    padding: 18px 24px;
+    color: #1e293b;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.wrap-table table tbody tr td {
+    padding: 18px 24px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.action-button {
+    padding: 4px 14px;
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
+    color: var(--color-primary);
+    background: none;
+
+    font-size: 12px;
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.action-button:hover {
+    color: var(--color-secondary);
+    background: none;
+}
+
+/*  */
+.hero {
+    display: grid;
+    grid-gap: 6px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #00408A;
+}
+
+.hero h2 span {
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 12px;
+    font-weight: 400;
+}
